@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Biglietto treno</title>
+</head>
+<body>
+     <div class="container">
+
+        <!-- form-biglietto  -->
+        <div class="form-biglietto">
+            <h1>Biglietto Treno</h1>
+            <div class="form-biglietto-inserimento">
+                <label for="nome"> Nome Cognome</label>
+                <input type="text" name= "nome" id="nome" placeholder="Inserisci nome e cognome">
+    
+                <label for="km"> KM da percorrere</label>
+                <input type="number" name= "km" id="km" placeholder="Inserisci i km">
+    
+    
+                <label for="fascia"> Fascia d'età</label>
+                <select name="fascia" id="fascia">
+                    <option value="vuota"></option><!-- controllare questa opzione -->
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over"> Over 65</option>
+                </select>
+            </div>
+            <div class="form-biglietto-bottoni">
+                <button id="genera"> Genera </button>
+                <button id="annulla"> Annulla</button>
+
+
+            </div>
+
+        </div> 
+        <!-- /form-biglietto  -->
+        <!-- biglietto  -->
+        <div id="biglietto" class="biglietto">
+            <div id="nome-passegiero"></div>
+            <div id="tipo-biglietto"></div>
+            <div id="totale"></div>
+            
+        </div>
+
+        <!-- /biglietto  -->
+
+     </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
