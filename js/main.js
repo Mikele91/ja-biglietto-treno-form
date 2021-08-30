@@ -47,14 +47,16 @@ function(){
     }
     
     //5c. inserisco prezzo
-    document.getElementById("totale").innerHTML = prezzoBiglietto;
+    document.getElementById("totale").innerHTML =  prezzoBiglietto + " €" ;
 
     //5d. inserisco carrozza e codice cp
     
     var carrozza  = (Math.floor(Math.random() * (10-1)+1)) ;
     console.log(carrozza);
+    document.getElementById("carrozza").innerHTML = carrozza;
     var cp = carrozza.toString() +  (Math.floor(Math.random() *(10000-1000)+1000));
     console.log(cp);
+    document.getElementById("codice").innerHTML =cp;
     // 6 mostra bigleitto
     document.getElementById("biglietto").classList.add("open");
 }

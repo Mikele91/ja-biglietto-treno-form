@@ -15,17 +15,75 @@ body{
     margin:auto;
    
 }
-.form-biglietto, .biglietto{
+.colonna{
+    display: flex;
+    flex-direction: column;
+
+}
+.colonna label{
+    margin: 10px 0;
+}
+.title{
+    color: white;
+    margin: 20px 0;
+    text-align: center;
+
+}
+.form-biglietto-inserimento {
+    display: flex ;
+    justify-content: space-around;
+
+}
+.form-biglietto {
     padding: 20px;
     background-color: white;
     text-align: center;
+    border-radius: 1rem;
+}
+/* stile  */
+label{
+    font-size: large;
+    color:  #b91450;
+}
+input, select{
+    padding: 10px;
+    border:1px solid #b91450;
+    border-radius: 10px;
+}
+input:focus, select:focus{
+
+    background: #b91450;
+}
+.info-passeggero{
+    background-color:gray ;
+}
+/* bottoni  */
+
+.form-biglietto-bottoni{
+    margin: 3rem 0;
+}
+#genera, #annulla{
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color:  #b91450;
+
 }
 
 
 .biglietto{
-    display: none;
-    margin-top: 50px;
+    /* display: none; */
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top:3px solid gray ;
+    border-bottom:3px solid gray ;
+    background:white;
+
 }
 .biglietto.open{
-    display: block;
+    display: flex; 
 }

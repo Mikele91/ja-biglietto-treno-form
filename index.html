@@ -9,25 +9,32 @@
 </head>
 <body>
      <div class="container">
+         <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
         <!-- form-biglietto  -->
         <div class="form-biglietto">
-            <h1>Biglietto Treno</h1>
             <div class="form-biglietto-inserimento">
-                <label for="nome"> Nome Cognome</label>
-                <input type="text" name= "nome" id="nome" placeholder="Inserisci nome e cognome">
+                <div class="colonna">
+                    <label for="nome"> Nome Cognome</label>
+                    <input type="text" name= "nome" id="nome" placeholder="Inserisci nome e cognome">
+
+                </div>
+                <div class="colonna">
+                    <label for="km"> KM da percorrere</label>
+                    <input type="number" name= "km" id="km" placeholder="Inserisci i km">
+
+                </div>
     
-                <label for="km"> KM da percorrere</label>
-                <input type="number" name= "km" id="km" placeholder="Inserisci i km">
-    
-    
-                <label for="fascia"> Fascia d'età</label>
-                <select name="fascia" id="fascia">
-                    <option value=""> Seleziona la tua opzione</option><!-- controllare questa opzione -->
-                    <option value="minorenne">Minorenne</option>
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="over"> Over 65</option>
-                </select>
+                <div class="colonna">
+
+                    <label for="fascia"> Fascia d'età</label>
+                    <select name="fascia" id="fascia">
+                        <option value=""> Seleziona la tua opzione</option><!-- controllare questa opzione -->
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over"> Over 65</option>
+                    </select>
+                </div>
             </div>
             <div class="form-biglietto-bottoni">
                 <button id="genera"> Genera </button>
@@ -39,12 +46,33 @@
         </div> 
         <!-- /form-biglietto  -->
         <!-- biglietto  -->
-        <div id="biglietto" class="biglietto">
-            <div id="nome-passegiero"></div>
-            <div id="tipo-biglietto"></div>
-            <div id="totale"></div>
-            
-        </div>
+        <h1 class="title">IL TUO BIGLIETTO</h1>
+        
+
+            <h2>Dettaglio Passeggeri</h2>
+            <div id="biglietto" class="biglietto">
+                <div class="info-passeggero">
+                    <h3>NOME PASSEGGERO</h3>
+                    <div id="nome-passegiero">michele</div>
+                </div>
+                <div class="offerta">
+                    <div>Offerta</div>
+                    <div id="tipo-biglietto"></div>
+                    
+                </div>
+                <div id="carrozza">
+    
+                </div>
+                <div id="codice">
+    
+                </div>
+                
+                <div class="prezzo-finale">
+                    
+                    <div id="totale">  </div>
+                </div>
+            </div>
+       
 
         <!-- /biglietto  -->
 
